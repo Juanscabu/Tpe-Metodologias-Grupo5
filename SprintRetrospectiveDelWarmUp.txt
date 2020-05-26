@@ -1,0 +1,9 @@
+Sprint Retrospective del warm-up:
+- No hicimos el sketch que se nos pidio. En su lugar hicimos una web que no mostraba las funcionalidades que el cliente solicito para esta entrega.
+- El criterio de DONE quedo mal definido porque no entendimos correctamente el concepto.
+- La creacion de las US y epicas estuvo bien.
+
+Cosas a mejorar:
+- Hacer mas meets. Al menos 4 por entrega. Nos va a ayudar a tener una nocion mas precisa de como vamos con el proyecto.
+- Todo el equipo debe comprender correctamente que es el criterio de DONE. Hacer uno nuevo.
+- Asegurarse de entender lo que hay que hacer antes de avanzar. Prestar mas atencion a lo solicitado por el cliente. No desviarse del objetivo. Mejor avanzar poco pero respetando el enunciado, que mucho pero con cosas que no nos pidieron.
