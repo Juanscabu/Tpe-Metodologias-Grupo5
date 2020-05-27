@@ -9,9 +9,23 @@ class ViajesView {
     $this->smarty->assign('basehref', BASE_URL);
 }
 
-  public function mostrarMisViajes() {
+  public function mostrarMisViajes($viajes) {
     $this->smarty->assign('titulo',"Mis Viajes");
+    $this->smarty->assign('viajes',$viajes);
     $this->smarty->display('templates/misViajes.tpl');
+  }
+
+  public function mostrarAlojamientos($alojamientos,$id) {
+    $this->smarty->assign('titulo',"Alojamientos");
+    $this->smarty->assign('id',$id);
+    $this->smarty->assign('alojamientos',$alojamientos);
+    $this->smarty->display('templates/alojamientos.tpl');
+  }
+
+  public function mostrarformulario($id) {
+    $this->smarty->assign('titulo',"Formulario");
+    $this->smarty->assign('id',$id);
+    $this->smarty->display('templates/formAgregarAlojamiento.tpl');
   }
 
   public function mostrarAgregarViajes() {
