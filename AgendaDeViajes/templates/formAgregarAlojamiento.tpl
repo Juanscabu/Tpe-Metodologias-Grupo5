@@ -41,7 +41,7 @@
                 <label for="fecha_egreso">Fecha de salida:</label>
                 <input type="date" class="form-control" name="fecha_egreso" id="fecha_egreso">
             </div>
-            
+             <input type="text" class="d-none" name="idViaje" id="idViaje" value="{$id}">
             <button type="submit" class="btn btn-primary">Agregar reserva</button> 
         </form>
     </slide>
