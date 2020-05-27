@@ -41,13 +41,15 @@ class ViajesController {
     public function cargarMail() {
         $hotel = "Saga Hotel Oslo Central";
         $tipo_habitacion = "Doble";
+        /*$cantidad_personas = 2;*/
+        /*$cantidad_habitaciones = 1;*/
         $horario_checkin = 7;
         $horario_checkout = 12;
         $servicio = "Todo Incluido";
-        $fecha_ingreso = mktime(date("Y"), date("m"), date("d")+1);
-        $fecha_egreso = mktime(date("Y"), date("m")+1, date("d"));
+        $fecha_ingreso = "2020-08-20";
+        $fecha_egreso = "2020-08-26";
         $id = 1;
-        //$this->viajesModel->addAlojamientoFormulario($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id);
+        $this->viajesModel->addAlojamientoFormulario($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id);
         header("Location: " . HOME);
     }
 
