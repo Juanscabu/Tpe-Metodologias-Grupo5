@@ -14,12 +14,25 @@ class ViajesController {
 
     
     public function mostrarMisViajes() {
-        $this->viajesView->mostrarMisViajes();
+        $viajes = $this->viajesModel->getViajes();
+        $this->viajesView->mostrarMisViajes($viajes);
     }
 
     public function mostrarAgregarViajes() {
         $this->viajesView->mostrarAgregarViajes();
     }
+
+    public function mostrarAlojamientos($params=null) {
+        $id = $params[':ID'];
+        $alojamientos = $this->viajesModel->getAlojamientos($id);
+        $this->viajesView->mostrarAlojamientos($alojamientos,$id);
+    }
+
+    public function addAlojamiento($params=null) {
+        $id = $params[':ID'];
+        $this->viajesView->mostrarFormulario($id);
+    }
+
 
     public function addAlojamientoFormulario() {
         $hotel = $_POST["hotel"];
@@ -29,9 +42,10 @@ class ViajesController {
         $servicio = $_POST["servicio"];
         $fecha_ingreso = $_POST["fecha_ingreso"];
         $fecha_egreso = $_POST["fecha_egreso"];
+        $id = $_POST["idViaje"];
             if (isset ($hotel) ) { //Los datos demas datos no se revisan porque siempre hay uno por defecto
                 if ($fecha_ingreso <= $fecha_egreso)  {
-                    $this->viajesModel->addAlojamientoFormulario($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso);
+                    $this->viajesModel->addAlojamientoFormulario($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id);
                     header("Location: " . HOME);
                 } else 
                     $this->viajesView->mostrarError("Las fechas no coinciden");

@@ -6,9 +6,9 @@ class ViajesModel {
         $this->db = new PDO('mysql:host=localhost;dbname=db_agenda_viajes;charset=utf8', 'root', '');
         }
 
-    function getAlojamientos() {
-            $sentencia = $this->db->prepare('SELECT * FROM ALOJAMIENTO');
-            $sentencia->execute();
+        function getAlojamientos ($id) {
+            $sentencia = $this->db->prepare('SELECT * FROM ALOJAMIENTO WHERE id_viaje = ?');
+            $sentencia->execute(array($id));
             return $sentencia->fetchAll(PDO::FETCH_OBJ);
         }
 
@@ -19,16 +19,17 @@ class ViajesModel {
             return $sentencia->fetch(PDO::FETCH_OBJ);
         }
 
-    function addAlojamientoFormulario ($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso) {
-        $sentencia = $this->db->prepare('INSERT INTO ALOJAMIENTO (hotel,tipo_habitacion,servicio,horario_checkin,horario_checkout,fecha_ingreso,fecha_egreso) VALUES(?,?,?,?,?,?,?)');
-        $sentencia->execute(array($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso));
+        function getViajes () {
+           $sentencia = $this->db->prepare('SELECT * FROM VIAJE');
+            $sentencia->execute();
+            return $sentencia->fetchAll(PDO::FETCH_OBJ);
+        }
+
+    function addAlojamientoFormulario ($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id) {
+        $sentencia = $this->db->prepare('INSERT INTO ALOJAMIENTO (hotel,tipo_habitacion,servicio,horario_checkin,horario_checkout,fecha_ingreso,fecha_egreso,id_viaje) VALUES(?,?,?,?,?,?,?,?)');
+        $sentencia->execute(array($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id));
     }
 
-     
-    public function borrarAlojamiento($id) {
-        $sentencia = $this->db->prepare('DELETE * FROM ALOJAMIENTO WHERE ALOJAMIENTO.id_alojameinto = ?' );
-        $sentencia->execute(array($id));
-        }
 
    
 }

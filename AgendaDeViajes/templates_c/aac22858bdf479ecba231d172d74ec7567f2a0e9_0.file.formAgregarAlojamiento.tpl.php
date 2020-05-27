@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-27 14:12:37
+/* Smarty version 3.1.33, created on 2020-05-27 15:57:03
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\formAgregarAlojamiento.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ece5935a2b798_14544195',
+  'unifunc' => 'content_5ece71afd8fad6_34402329',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aac22858bdf479ecba231d172d74ec7567f2a0e9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\formAgregarAlojamiento.tpl',
-      1 => 1590581160,
+      1 => 1590586998,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ece5935a2b798_14544195 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ece71afd8fad6_34402329 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <slide>
@@ -67,7 +67,8 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
                 <label for="fecha_egreso">Fecha de salida:</label>
                 <input type="date" class="form-control" name="fecha_egreso" id="fecha_egreso">
             </div>
-            
+             <input type="text" class="d-none" name="idViaje" id="idViaje" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+">
             <button type="submit" class="btn btn-primary">Agregar reserva</button> 
         </form>
     </slide>

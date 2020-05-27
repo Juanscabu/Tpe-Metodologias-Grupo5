@@ -12,7 +12,7 @@ class HomeView {
 
   public function mostrarHome() {
     $this->smarty->assign('titulo',"Home");
-    $this->smarty->display('templates/formAgregarAlojamiento.tpl');
+    $this->smarty->display('templates/home.tpl');
   }
 
   public function mostrarRegistro() {

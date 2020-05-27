@@ -13,7 +13,7 @@
 
 <body>
   <contenedor>
-    <logo><img src="images/logo.jpg" alt="Logo viajes" class="logo"></logo>
+ <!--  <logo><img src="images/logo.jpg" alt="Logo viajes" class="logo"></logo> -->
     <navbar>
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
