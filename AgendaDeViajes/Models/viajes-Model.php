@@ -3,34 +3,30 @@ class ViajesModel {
     private $db;
 
     public function __construct() {
-        $this->db = new PDO('mysql:host=localhost;dbname=...nombreDelaBase...;charset=utf8', 'root', '');
+        $this->db = new PDO('mysql:host=localhost;dbname=db_agenda_viajes;charset=utf8', 'root', '');
         }
 
-    function getViajes() {
-            $sentencia = $this->db->prepare('SELECT * FROM  ORDER BY  asc');
+    function getAlojamientos() {
+            $sentencia = $this->db->prepare('SELECT * FROM ALOJAMIENTO');
             $sentencia->execute();
             return $sentencia->fetchAll(PDO::FETCH_OBJ);
         }
 
 
-    function getViaje ($id) {
-            $sentencia = $this->db->prepare('SELECT * ');
+    function getAlojamiento ($id) {
+            $sentencia = $this->db->prepare('SELECT * FROM ALOJAMIENTO WHERE id_alojamiento = ?');
             $sentencia->execute(array($id));
             return $sentencia->fetch(PDO::FETCH_OBJ);
         }
-    function addViaje ($dato1,$dato2) { //poner nombre a los datos en base a los nombres que tengan los atributos en la base 
-        $sentencia = $this->db->prepare('INSERT INTO ) VALUES(?,?)');
-        $sentencia->execute(array($dato1,$dato2));
+
+    function addAlojamientoFormulario ($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso) {
+        $sentencia = $this->db->prepare('INSERT INTO ALOJAMIENTO (hotel,tipo_habitacion,servicio,horario_checkin,horario_checkout,fecha_ingreso,fecha_egreso) VALUES(?,?,?,?,?,?,?)');
+        $sentencia->execute(array($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso));
     }
 
-    function  modificaViajeEditado ($dato1,$dato2,$id) {
-        $sentencia = $this->db->prepare('UPDATE SET dato1=?,dato2=? WHERE id_viaje = ?' );
-        $sentencia->execute(array($dato1,$dato2,$id));
-    }
-
-      
-    public function borrarViaje($id) {
-        $sentencia = $this->db->prepare('DELETE FROM  WHERE viajes.id_viaje = ?' );
+     
+    public function borrarAlojamiento($id) {
+        $sentencia = $this->db->prepare('DELETE * FROM ALOJAMIENTO WHERE ALOJAMIENTO.id_alojameinto = ?' );
         $sentencia->execute(array($id));
         }
 

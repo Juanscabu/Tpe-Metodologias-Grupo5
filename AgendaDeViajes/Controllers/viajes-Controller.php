@@ -3,10 +3,13 @@ include_once('Views/viajes-View.php');
 include_once('Models/viajes-Model.php');
 
 class ViajesController {
-    private $view;
+    private $viajesView;
+    private $viajesModel;
+
 
     public function __construct() {
         $this->viajesView = new ViajesView ();
+        $this->viajesModel = new ViajesModel ();
     }
 
     
@@ -16,6 +19,25 @@ class ViajesController {
 
     public function mostrarAgregarViajes() {
         $this->viajesView->mostrarAgregarViajes();
+    }
+
+    public function addAlojamientoFormulario() {
+        $hotel = $_POST["hotel"];
+        $tipo_habitacion = $_POST["tipo_habitacion"];
+        $horario_checkin = 10;
+        $horario_checkout = 12;
+        $servicio = $_POST["servicio"];
+        $fecha_ingreso = $_POST["fecha_ingreso"];
+        $fecha_egreso = $_POST["fecha_egreso"];
+            if (isset ($hotel) ) { //Los datos demas datos no se revisan porque siempre hay uno por defecto
+                if ($fecha_ingreso <= $fecha_egreso)  {
+                    $this->viajesModel->addAlojamientoFormulario($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso);
+                    header("Location: " . HOME);
+                } else 
+                    $this->viajesView->mostrarError("Las fechas no coinciden");
+            }
+             else
+                $this->viajesView->mostrarError("Faltan campos obligatorios");
     }
 
 }
