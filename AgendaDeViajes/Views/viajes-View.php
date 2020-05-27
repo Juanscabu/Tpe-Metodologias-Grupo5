@@ -18,6 +18,12 @@ class ViajesView {
     $this->smarty->assign('titulo',"Agregar Viajes");
     $this->smarty->display('templates/agregarViajes.tpl');
   }
+
+  public function mostrarError($msgError) {
+    echo "<h1>ERROR!</h1>";
+    echo "<h2>{$msgError}</h2>";
+}
+
 }
 
 ?>
