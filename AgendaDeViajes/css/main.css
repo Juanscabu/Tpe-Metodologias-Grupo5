@@ -77,8 +77,8 @@ img{
         margin: 0;
     }
     logo{
-        grid-column:1/5;
-        grid-row:1 ;
+        background-size:cover;
+        background-position: center center;
         background-color: white;
         text-align: center;
     }
