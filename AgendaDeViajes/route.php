@@ -12,7 +12,8 @@
     $r->addRoute("addAlojamientoFormulario", "POST", "ViajesController", "addAlojamientoFormulario");
     $r->addRoute("addAlojamiento/:ID", "GET", "ViajesController", "addAlojamiento");
     $r->addRoute("mostrarAlojamientos/:ID", "GET", "ViajesController", "mostrarAlojamientos");
-
+    $r->addRoute("addAlojamientoMail", "GET", "ViajesController", "mostrarMail");
+    $r->addRoute("addReservaMail", "POST", "ViajesController", "cargarMail");
     
 
     $r->setDefaultRoute("HomeController", "mostrarHome");

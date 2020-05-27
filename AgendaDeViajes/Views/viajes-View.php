@@ -33,6 +33,11 @@ class ViajesView {
     $this->smarty->display('templates/agregarViajes.tpl');
   }
 
+  public function mostrarMail() {
+    $this->smarty->assign('titulo');
+    $this->smarty->display('templates/agregarViajeMail.tpl');
+  }
+
   public function mostrarError($msgError) {
     echo "<h1>ERROR!</h1>";
     echo "<h2>{$msgError}</h2>";
