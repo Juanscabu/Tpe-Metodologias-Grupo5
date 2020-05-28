@@ -25,9 +25,9 @@ class ViajesModel {
             return $sentencia->fetchAll(PDO::FETCH_OBJ);
         }
 
-    function addAlojamientoFormulario ($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id) {
-        $sentencia = $this->db->prepare('INSERT INTO ALOJAMIENTO (hotel,tipo_habitacion,servicio,horario_checkin,horario_checkout,fecha_ingreso,fecha_egreso,id_viaje) VALUES(?,?,?,?,?,?,?,?)');
-        $sentencia->execute(array($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id));
+    function addAlojamientoFormulario ($hotel,$single,$doble,$servicio,$cantidad_personas,$cantidad_habitaciones,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id) {
+        $sentencia = $this->db->prepare('INSERT INTO ALOJAMIENTO (hotel,single,doble,servicio,cantidad_personas,cantidad_habitaciones,horario_checkin,horario_checkout,fecha_ingreso,fecha_egreso,id_viaje) VALUES(?,?,?,?,?,?,?,?,?,?,?)');
+        $sentencia->execute(array($hotel,$single,$doble,$servicio,$cantidad_personas,$cantidad_habitaciones,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id));
     }
 
 

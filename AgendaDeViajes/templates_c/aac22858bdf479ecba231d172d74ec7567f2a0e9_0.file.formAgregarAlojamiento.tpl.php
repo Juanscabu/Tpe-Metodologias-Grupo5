@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-27 15:57:03
+/* Smarty version 3.1.33, created on 2020-05-28 01:28:32
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\formAgregarAlojamiento.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ece71afd8fad6_34402329',
+  'unifunc' => 'content_5ecef7a0e00b43_54844817',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aac22858bdf479ecba231d172d74ec7567f2a0e9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\formAgregarAlojamiento.tpl',
-      1 => 1590586998,
+      1 => 1590622111,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ece71afd8fad6_34402329 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecef7a0e00b43_54844817 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <slide>
@@ -30,44 +30,49 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
         <h5>Por favor, complete los siguientes campos para reservar un hotel</h5> 
         <form  class="form-group" method= "POST"  action="addAlojamientoFormulario" >
             <div class="form-group">
-                <label for="hotel">Hotel:</label>
-                <select class="form-control" name="hotel" id="hotel">
-                    <option value="1">Hotel 1</option>
-                    <option value="2">Hotel 2</option>
-                    <option value="3">Hotel 3</option>
-                    <option value="4">Hotel 4</option>
-                    <option value="5">Hotel 5</option>
-                </select>
+                <input list="hotel" name="hotel" type="text" placeholder="Busque su Hotel">
+                <datalist id="hotel">
+                    <option value="Hotel Alejandro"></option>
+                    <option value="Hotel Alejo"></option>
+                    <option value="Hotel Amarillo"></option>
+                    <option value="Hotel Blanco"></option>
+                    <option value="Hotel Negro"></option>
+                    <option value="Hotel Azul"></option>
+                    <option value="Hotel Marrón"></option>
+                    <option value="Hotel Naranja"></option>
+                    <option value="Hotel Verde"></option>
+                </datalist>
             </div>
             <div class="form-group">
-                <label for="tipo_habitacion">Tipo de habitacion:</label>
-                <select class="form-control" name="tipo_habitacion" id="tipo_habitacion">
-                    <option value="1">Tipo de habitacion 1</option>
-                    <option value="2">Tipo de habitacion 2</option>
-                    <option value="3">Tipo de habitacion 3</option>
-                    <option value="4">Tipo de habitacion 4</option>
-                    <option value="5">Tipo de habitacion 5</option>
-                </select>
+                <label for="cantidad_personas">Cuantas personas?</label>
+                <input type="number" id="cantidad_personas" name="cantidad_personas">
+            </div>
+             <div class="form-group">
+                <label for="cantidad_cantidad_habitaciones">Cuantas habitaciones?</label>
+                <input type="number" id="cantidad_habitaciones" name="cantidad_habitaciones">
+            </div>
+            <div class="form-group">
+                <label for="single">Habitaciones Singles:</label>
+                <input type="number" id="single" name="single">
+            
+             <div class="form-group">
+                 <label for="doble">Habitaciones Dobles:</label>
+                <input type="number" id="doble" name="doble">
             </div>
             <div class="form-group">
                 <label for="servicio">Servicio:</label>
-                <select class="form-control" name="servicio" id="servicio">
-                    <option value="1">Tipo de servicio 1</option>
-                    <option value="2">Tipo de servicio 2</option>
-                    <option value="3">Tipo de servicio 3</option>
-                    <option value="4">Tipo de servicio 4</option>
-                    <option value="5">Tipo de servicio 5</option>
-                </select>
+                <div></div>
+               <input type="text" id="servicio" name="servicio">
             </div>
             <div>
-            <label for="fecha_ingreso">Fecha de ingreso:</label>
+                <label for="fecha_ingreso">Fecha de ingreso:</label>
                 <input type="date" class="form-control" name="fecha_ingreso" id="fecha_ingreso">
             </div>
             <div>
                 <label for="fecha_egreso">Fecha de salida:</label>
                 <input type="date" class="form-control" name="fecha_egreso" id="fecha_egreso">
             </div>
-             <input type="text" class="d-none" name="idViaje" id="idViaje" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+            <input type="text" class="d-none" name="idViaje" id="idViaje" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 ">
             <button type="submit" class="btn btn-primary">Agregar reserva</button> 
         </form>
