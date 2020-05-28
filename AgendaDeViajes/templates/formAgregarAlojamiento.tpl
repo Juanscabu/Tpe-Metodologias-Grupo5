@@ -1,7 +1,7 @@
 {include 'templates/header.tpl'}
     <slide>
         <h2>Cargar un alojamiento</h1>
-        <h5>Por favor, complete los siguientes campos para reservar un hotel</h5> 
+        <h5>Por favor, complete los siguientes campos para agregar reserva de hotel</h5> 
         <form  class="form-group" method= "POST"  action="addAlojamientoFormulario" >
             <div class="form-group">
                 <input list="hotel" name="hotel" type="text" placeholder="Busque su Hotel">
