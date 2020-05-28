@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-28 01:28:32
+/* Smarty version 3.1.33, created on 2020-05-28 17:38:36
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\formAgregarAlojamiento.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecef7a0e00b43_54844817',
+  'unifunc' => 'content_5ecfdafc045db9_36389963',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aac22858bdf479ecba231d172d74ec7567f2a0e9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\formAgregarAlojamiento.tpl',
-      1 => 1590622111,
+      1 => 1590680304,
       2 => 'file',
     ),
   ),
@@ -22,12 +22,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ecef7a0e00b43_54844817 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecfdafc045db9_36389963 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <slide>
         <h2>Cargar un alojamiento</h1>
-        <h5>Por favor, complete los siguientes campos para reservar un hotel</h5> 
+        <h5>Por favor, complete los siguientes campos para agregar reserva de hotel</h5> 
         <form  class="form-group" method= "POST"  action="addAlojamientoFormulario" >
             <div class="form-group">
                 <input list="hotel" name="hotel" type="text" placeholder="Busque su Hotel">
