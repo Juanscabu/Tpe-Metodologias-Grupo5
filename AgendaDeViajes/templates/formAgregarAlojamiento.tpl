@@ -1,7 +1,6 @@
 {include 'templates/header.tpl'}
     <slide>
         <h2>Cargar un alojamiento</h1>
-        <h5><a href="addAlojamientoMail">Click aqui para cargar via mail</a></h5>
         <h5>Por favor, complete los siguientes campos para reservar un hotel</h5> 
         <form  class="form-group" method= "POST"  action="addAlojamientoFormulario" >
             <div class="form-group">

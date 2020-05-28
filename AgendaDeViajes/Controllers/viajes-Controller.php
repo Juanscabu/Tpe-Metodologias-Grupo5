@@ -1,7 +1,6 @@
 <?php 
 include_once('Views/viajes-View.php');
 include_once('Models/viajes-Model.php');
-date_default_timezone_set('GMT');
 
 class ViajesController {
     private $viajesView;
@@ -27,6 +26,22 @@ class ViajesController {
         $this->viajesView->mostrarMail();
     }
 
+    public function cargarMail() {
+        $hotel = "Hotel Oslo Central";
+        $single = 1;
+        $doble = 1;
+        $horario_checkin = 11;
+        $horario_checkout = 12;
+        $servicio = "Gimnasio";
+        $cantidad_personas = 3;
+        $cantidad_habitaciones = 2;
+        $fecha_ingreso = "2020-06-25";
+        $fecha_egreso =  "2020-06-28";
+        $id = 2;
+        $this->viajesModel->addAlojamientoFormulario($hotel,$single,$doble,$servicio,$cantidad_personas,$cantidad_habitaciones,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id);
+        header("Location: " . HOME);
+    }
+
     public function mostrarAlojamientos($params=null) {
         $id = $params[':ID'];
         $alojamientos = $this->viajesModel->getAlojamientos($id);
@@ -38,20 +53,6 @@ class ViajesController {
         $this->viajesView->mostrarFormulario($id);
     }
 
-    public function cargarMail() {
-        $hotel = "Saga Hotel Oslo Central";
-        $tipo_habitacion = "Doble";
-        /*$cantidad_personas = 2;*/
-        /*$cantidad_habitaciones = 1;*/
-        $horario_checkin = 7;
-        $horario_checkout = 12;
-        $servicio = "Todo Incluido";
-        $fecha_ingreso = "2020-08-20";
-        $fecha_egreso = "2020-08-26";
-        $id = 1;
-        $this->viajesModel->addAlojamientoFormulario($hotel,$tipo_habitacion,$servicio,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id);
-        header("Location: " . HOME);
-    }
 
     public function addAlojamientoFormulario() {
         $hotel = $_POST["hotel"];
