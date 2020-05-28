@@ -1,18 +1,15 @@
+Tpe-Metodologias-Grupo5
 Definición criterios de DONE:
 
-    El codigo debe quedar legible y relativamente facil de entender.
+- El codigo utilizado para el funcionamiento de la tarea es legible. Esto significa que esta correctamente indentado, comentadode ser necesario.
 
-    Revisión de código por al menos 2 compañeros. 
+- Revision de codigo por al menos 2 compañeros
 
-    Se debera probar que las nuevas funciones trabajen correctamente.
+- Al menos 2 compañeros del equipo de desarrollo han hecho una Unit Test para comprobar que la tarea funciona y hace lo que pidio el cliente. Si hay algun error, se debe escribir un informe comentando el problema de forma clara y detallada para que todos entiendan lo que hay que corregir.
 
-    Se debera entregar un Sofware en funcionamiento al final de un sprint.
+- El codigo fue subido a GitHub y en el mensaje del commit dice el numero de la tarea a la que corresponde
 
-    El trabajo terminado debera estar subido a Github con su debido commit.
-
-  
-
-    
+- En la descripcion de la tarea hay un link hacia el commit en github
 
 
     
