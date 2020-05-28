@@ -6,6 +6,11 @@ class ViajesModel {
         $this->db = new PDO('mysql:host=localhost;dbname=db_agenda_viajes;charset=utf8', 'root', '');
         }
 
+        function getAlojamientos ($id) {
+            $sentencia = $this->db->prepare('SELECT * FROM ALOJAMIENTO WHERE id_viaje = ?');
+            $sentencia->execute(array($id));
+            return $sentencia->fetchAll(PDO::FETCH_OBJ);
+        }
 
 
     function getAlojamiento ($id) {
