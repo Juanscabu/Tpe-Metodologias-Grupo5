@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-28 01:28:32
+/* Smarty version 3.1.33, created on 2020-05-28 19:04:18
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\formAgregarAlojamiento.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecef7a0e00b43_54844817',
+  'unifunc' => 'content_5ecfef1219d667_83211283',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aac22858bdf479ecba231d172d74ec7567f2a0e9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\formAgregarAlojamiento.tpl',
-      1 => 1590622111,
+      1 => 1590685433,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5ecef7a0e00b43_54844817 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ecfef1219d667_83211283 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <slide>
@@ -59,11 +59,38 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
                  <label for="doble">Habitaciones Dobles:</label>
                 <input type="number" id="doble" name="doble">
             </div>
-            <div class="form-group">
-                <label for="servicio">Servicio:</label>
-                <div></div>
-               <input type="text" id="servicio" name="servicio">
+           <label for="single">Servicios:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="gimnasio" name="servicios[]" id="check1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Gimnasio
+                </label>
             </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="desayuno" name="servicios[]" id="check2">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Desayuno
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="limpieza" name="servicios[]" id="check3">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Limpieza
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="pileta" name="servicios[]" id="check4">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Pileta
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="sauna" name="servicios[]" id="check5">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Sauna
+                </label>
+            </div>
+            <div>
             <div>
                 <label for="fecha_ingreso">Fecha de ingreso:</label>
                 <input type="date" class="form-control" name="fecha_ingreso" id="fecha_ingreso">
