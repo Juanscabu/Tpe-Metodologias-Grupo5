@@ -33,11 +33,38 @@
                  <label for="doble">Habitaciones Dobles:</label>
                 <input type="number" id="doble" name="doble">
             </div>
-            <div class="form-group">
-                <label for="servicio">Servicio:</label>
-                <div></div>
-               <input type="text" id="servicio" name="servicio">
+           <label for="single">Servicios:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="gimnasio" name="servicios[]" id="check1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Gimnasio
+                </label>
             </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="desayuno" name="servicios[]" id="check2">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Desayuno
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="limpieza" name="servicios[]" id="check3">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Limpieza
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="pileta" name="servicios[]" id="check4">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Pileta
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="sauna" name="servicios[]" id="check5">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Sauna
+                </label>
+            </div>
+            <div>
             <div>
                 <label for="fecha_ingreso">Fecha de ingreso:</label>
                 <input type="date" class="form-control" name="fecha_ingreso" id="fecha_ingreso">
