@@ -1,0 +1,24 @@
+Presentes 
+ - Asistió todo el equipo de desarrollo. 
+ - Profesores a cargo de la materia.
+
+ 
+
+Que salio bien?
+
+   - Logramos cumplir el Sprint goal.
+   - Hicimos una buena estimacion de las User Stories.
+   - Pudimos entender de mejor manera que se nos pedia.
+
+ 
+
+Que podria mejorar?
+   - Hacer mas preguntar al PO antes de iniciar el Sprint.
+   - No permitir que el PO nos agregue trabajo durante el Sprint.
+   - Cargar los storie points antes de iniciar el Sprint.
+ 
+
+Que nos comprometemos a hacer para el proximo Sprint.
+	- Hacer mas reuniones para organizarnos mejor
+        - Comunicarnos mas con PO
+        - Iniciar el Sprint una vez tengamos los requisitos claros.
