@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.33, created on 2020-05-28 17:38:36
-=======
-/* Smarty version 3.1.33, created on 2020-05-28 19:04:18
->>>>>>> TPEG5-48
+/* Smarty version 3.1.33, created on 2020-06-28 23:40:54
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\formAgregarAlojamiento.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-<<<<<<< HEAD
-  'unifunc' => 'content_5ecfdafc045db9_36389963',
-=======
-  'unifunc' => 'content_5ecfef1219d667_83211283',
->>>>>>> TPEG5-48
+  'unifunc' => 'content_5ef90e6630b935_87513546',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aac22858bdf479ecba231d172d74ec7567f2a0e9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\formAgregarAlojamiento.tpl',
-<<<<<<< HEAD
-      1 => 1590680304,
-=======
-      1 => 1590685433,
->>>>>>> TPEG5-48
+      1 => 1593378223,
       2 => 'file',
     ),
   ),
@@ -34,11 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_5ecfdafc045db9_36389963 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_5ecfef1219d667_83211283 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> TPEG5-48
+function content_5ef90e6630b935_87513546 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <slide>

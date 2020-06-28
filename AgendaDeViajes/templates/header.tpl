@@ -29,7 +29,7 @@
                   <a class="nav-link" href="mostrarMisViajes">Mis Viajes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="mostrarAgregarViajes">Agregar Viajes</a>
+                  <a class="nav-link" href="mostrarAgregarVuelo">Agregar Vuelo</a>
                 </li>
               </ul>
             {include 'templates/login.tpl'}

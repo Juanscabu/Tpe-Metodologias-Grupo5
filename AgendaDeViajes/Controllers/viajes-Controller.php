@@ -18,10 +18,6 @@ class ViajesController {
         $this->viajesView->mostrarMisViajes($viajes);
     }
 
-    public function mostrarAgregarViajes() {
-        $this->viajesView->mostrarAgregarViajes();
-    }
-
     public function mostrarMail() {
         $this->viajesView->mostrarMail();
     }

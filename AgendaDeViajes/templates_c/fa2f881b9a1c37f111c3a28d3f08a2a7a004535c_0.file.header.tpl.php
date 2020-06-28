@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-27 15:03:30
+/* Smarty version 3.1.33, created on 2020-06-28 23:26:02
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ece6522215022_97794492',
+  'unifunc' => 'content_5ef90aea805a68_77742346',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fa2f881b9a1c37f111c3a28d3f08a2a7a004535c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\header.tpl',
-      1 => 1590584607,
+      1 => 1593379318,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/login.tpl' => 1,
   ),
 ),false)) {
-function content_5ece6522215022_97794492 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ef90aea805a68_77742346 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html lang="en">
 <head>
     <base href="<?php echo $_smarty_tpl->tpl_vars['basehref']->value;?>
@@ -57,7 +57,7 @@ function content_5ece6522215022_97794492 (Smarty_Internal_Template $_smarty_tpl)
                   <a class="nav-link" href="mostrarMisViajes">Mis Viajes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="mostrarAgregarViajes">Agregar Viajes</a>
+                  <a class="nav-link" href="mostrarAgregarVuelo">Agregar Vuelo</a>
                 </li>
               </ul>
             <?php $_smarty_tpl->_subTemplateRender('file:templates/login.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
