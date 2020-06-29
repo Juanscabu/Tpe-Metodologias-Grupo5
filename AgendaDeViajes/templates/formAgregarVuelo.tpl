@@ -48,8 +48,16 @@
                 <input type="date" id="fecha_salida" name="fecha_salida">
             </div>
             <div class="form-group">
+                <label for="hora_salida">Hora salida:</label>
+                <input type="time" id="hora_salida" name="hora_salida">
+            </div>
+            <div class="form-group">
                 <label for="fecha_llegada">Fecha llegada:</label>
                 <input type="date" id="fecha_llegada" name="fecha_llegada">
+            </div>
+            <div class="form-group">
+                <label for="hora_llegada">Hora llegada:</label>
+                <input type="time" id="hora_llegada" name="hora_llegada">
             </div>
              <div class="form-group">
                 <label for="reserva">Reserva:</label>
