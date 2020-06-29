@@ -76,7 +76,7 @@
                 <input type="number" id="peso_maximo" name="peso_maximo">
             </div>
 
-            <input type="text" class="d-none" name="idViaje" id="idViaje" value="{$id}">
+            <!--<input type="text" class="d-none" name="idViaje" id="idViaje" value="{$id}">-->
             <button type="submit" class="btn btn-primary">Agregar vuelo</button> 
         </form>
     </slide>

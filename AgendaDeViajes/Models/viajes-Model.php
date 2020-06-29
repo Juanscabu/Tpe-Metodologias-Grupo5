@@ -30,7 +30,11 @@ class ViajesModel {
         $sentencia->execute(array($hotel,$single,$doble,$servicio,$cantidad_personas,$cantidad_habitaciones,$horario_checkin,$horario_checkout,$fecha_ingreso,$fecha_egreso,$id));
     }
 
+    function getViajeFechas($fecha_salida,$fecha_llegada){
+        $sentencia = $this->db->prepare('SELECT * FROM VIAJE WHERE (fecha_salida = ? AND fecha_llegada = ?)');
+        $sentencia->execute(array($fecha_salida,$fecha_llegada));
+        return $sentencia->fetchAll(PDO::FETCH_OBJ);
+    }
 
-   
 }
 ?>
