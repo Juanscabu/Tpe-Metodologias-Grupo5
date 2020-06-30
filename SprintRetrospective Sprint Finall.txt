@@ -1,0 +1,13 @@
+Presentes 
+ - Asistió todo el equipo de desarrollo. 
+ 
+Que salio bien?
+- Cumplimos el Sprint Goal
+- Cumplimos con hacer mas reuniones
+- Iniciamos el Sprint con los objetivos y requisitos claros y bien definidos
+- Mejoro la comunicacion interna del equipo
+- La metodologia de trabajo fluyo mas naturalmente al tener un poco mas de experiencia en la misma y conocernos un poco mas entre los miembros del equipo
+
+Que se podria mejorar?
+- Organizacion a nivel individual por parte de todos los miembros del equipo
+- La mayoria de las tareas se completaron durante los ultimos dias del Sprint
