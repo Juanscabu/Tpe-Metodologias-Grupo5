@@ -7,6 +7,7 @@
           <td>Ciudad Destino</td>
           <td>Fecha Salida</td>
           <td>Fecha Llegada</td>
+           <td>Detalles</td>
         </tr>
     {foreach  from=$vuelos item=$vuelo}
         <tr>
@@ -15,6 +16,7 @@
           <td>{$vuelo->ciudad_destino}</td>
            <td>{$vuelo->fecha_salida}</td>
             <td>{$vuelo->fecha_llegada}</td>
+            <td><a href="" class="btn btn-primary">Detalles</a>
         </tr>
     {/foreach}
 </table>
