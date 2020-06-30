@@ -31,7 +31,7 @@ class ViajesModel {
     }
 
     function getViajeFechas($fecha_salida,$fecha_llegada){
-        $sentencia = $this->db->prepare('SELECT * FROM VIAJE WHERE fecha_inicio = ? AND fecha_fin = ?');
+        $sentencia = $this->db->prepare('SELECT * FROM VIAJE WHERE fecha_inicio <= ? AND fecha_fin >= ?');
         $sentencia->execute(array($fecha_salida,$fecha_llegada));
         return $sentencia->fetchAll(PDO::FETCH_OBJ);
     }
