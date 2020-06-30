@@ -45,6 +45,17 @@ class VuelosController {
         
     }
 
+    public function addVuelo () {
+
+    }
+
+    public function mostrarMailVuelo () {
+
+    }
+
+    public function cargarMailVuelo () {
+
+    }
 
 }
 ?>
