@@ -17,7 +17,14 @@
     $r->addRoute("cargarMail", "GET", "ViajesController", "cargarMail");
     $r->addRoute("agregarViajeVuelo", "POST", "ViajesController", "agregarViajeVuelo");
     $r->addRoute("addVueloFormulario", "POST", "VuelosController", "addVueloFormulario");
+<<<<<<< HEAD
     $r->addRoute("addViajeVuelo", "POST", "VuelosController", "addViajeVuelo");
+=======
+    $r->addRoute("mostrarVuelos/:ID", "GET", "VuelosController", "mostrarVuelos");
+ 
+ 
+
+>>>>>>> c54fb9113e96a4ea74df9f00b762ab307c1237ed
 
   
   

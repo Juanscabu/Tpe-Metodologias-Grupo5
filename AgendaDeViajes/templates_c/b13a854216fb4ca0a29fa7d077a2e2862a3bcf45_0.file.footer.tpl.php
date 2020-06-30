@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-05-27 02:18:11
+/* Smarty version 3.1.33, created on 2020-06-30 23:19:04
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ecdb1c3b038e2_97483048',
+  'unifunc' => 'content_5efbac48272399_20618274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b13a854216fb4ca0a29fa7d077a2e2862a3bcf45' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\footer.tpl',
-      1 => 1590492643,
+      1 => 1593551750,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ecdb1c3b038e2_97483048 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efbac48272399_20618274 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <listnav class="lista">
       <ul>
         <li><a href="mostrarHome">Home</a></li>
         <li><a href="mostrarMisViajes">Mis Viajes</a></li>
-         <li><a href="mostrarAgregarViajes">Agregar Viajes</a></li>
+         <li><a href="mostrarAgregarViajes">Agregar Vuelos</a></li>
       </ul>
     </listnav>
     <social class="lista">

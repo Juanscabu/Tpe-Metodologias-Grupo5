@@ -21,6 +21,12 @@ class VuelosController {
         $this->vuelosView->mostrarAgregarVuelo();
     }
 
+    public function mostrarVuelos($params=null) {
+        $id = $params[':ID'];
+        $vuelos = $this->vuelosModel->getVuelos($id);
+        $this->vuelosView->mostrarVuelos($vuelos);
+    }
+
     public function addVueloFormulario() {
         $nro_vuelo = $_POST["nro_vuelo"];
         $compañia = $_POST["compañia"];
