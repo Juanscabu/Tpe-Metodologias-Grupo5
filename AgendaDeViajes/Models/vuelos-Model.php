@@ -12,6 +12,11 @@ class VuelosModel {
         $sentencia->execute(array($nro_vuelo,$compañia,$aeropuerto_origen,$aeropuerto_destino,$ciudad_origen,$ciudad_destino,$pais_origen,$pais_destino,$fecha_salida,$hora_salida,$fecha_llegada,$hora_llegada,$id_viaje));
     }
 
+    function getVuelos($id) {
+        $sentencia = $this->db->prepare('SELECT * FROM VUELO WHERE id_viaje = ?');
+        $sentencia->execute(array($id));
+        return $sentencia->fetchAll(PDO::FETCH_OBJ);
+    }
     
 
    

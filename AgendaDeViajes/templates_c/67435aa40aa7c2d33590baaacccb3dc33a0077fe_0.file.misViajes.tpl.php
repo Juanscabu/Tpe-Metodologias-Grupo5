@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-06-30 01:09:33
+/* Smarty version 3.1.33, created on 2020-06-30 23:15:16
   from 'C:\xampp\htdocs\proyectos\Tpe-Metodologias-Grupo5\AgendaDeViajes\templates\misViajes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5efa74ad9ab373_33382953',
+  'unifunc' => 'content_5efbab6497c3c5_09464156',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '67435aa40aa7c2d33590baaacccb3dc33a0077fe' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectos\\Tpe-Metodologias-Grupo5\\AgendaDeViajes\\templates\\misViajes.tpl',
-      1 => 1593472082,
+      1 => 1593551283,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5efa74ad9ab373_33382953 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5efbab6497c3c5_09464156 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <slide>
@@ -44,7 +44,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['viaje']->value) {
 ?>
-      <?php if ($_smarty_tpl->tpl_vars['viaje']->value->fecha_fin > 2020-12-31) {?>
+      <?php if (($_smarty_tpl->tpl_vars['viaje']->value->fecha_fin >= "2020-07-02")) {?>
         <tr>
           <td><?php echo $_smarty_tpl->tpl_vars['viaje']->value->nombre;?>
 </td>
@@ -89,7 +89,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['viaje']->value) {
 ?>
         <tr>
-        <?php if ($_smarty_tpl->tpl_vars['viaje']->value->fecha_fin < 2021-12-31) {?>
+        <?php if ($_smarty_tpl->tpl_vars['viaje']->value->fecha_fin < "2020-07-02") {?> 
           <td><?php echo $_smarty_tpl->tpl_vars['viaje']->value->nombre;?>
 </td>
           <td><?php echo $_smarty_tpl->tpl_vars['viaje']->value->nro_vuelo;?>

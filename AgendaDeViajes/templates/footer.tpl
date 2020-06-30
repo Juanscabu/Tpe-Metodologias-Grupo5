@@ -2,7 +2,7 @@
       <ul>
         <li><a href="mostrarHome">Home</a></li>
         <li><a href="mostrarMisViajes">Mis Viajes</a></li>
-         <li><a href="mostrarAgregarViajes">Agregar Viajes</a></li>
+         <li><a href="mostrarAgregarViajes">Agregar Vuelos</a></li>
       </ul>
     </listnav>
     <social class="lista">

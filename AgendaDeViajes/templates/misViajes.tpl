@@ -14,7 +14,7 @@
           <td>Vuelos</td>
         </tr>
     {foreach  from=$viajes item=$viaje}
-      {if $viaje->fecha_fin > 2020-12-31}
+      {if ($viaje->fecha_fin >= "2020-07-02")}
         <tr>
           <td>{$viaje->nombre}</td>
           <td>{$viaje->nro_vuelo}
@@ -43,7 +43,7 @@
           <td>Vuelos</td>
             {foreach  from=$viajes item=$viaje}
         <tr>
-        {if $viaje->fecha_fin < 2021-12-31}
+        {if $viaje->fecha_fin <  "2020-07-02"} 
           <td>{$viaje->nombre}</td>
           <td>{$viaje->nro_vuelo}
           <td>{$viaje->compania}
