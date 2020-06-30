@@ -49,6 +49,10 @@ class ViajesController {
         $this->viajesView->mostrarFormulario($id);
     }
 
+    public function agregarViajeVuelo($params=null) {
+        $id = $params[':ID'];
+        $this->viajesView->mostrarFormViajeVuelo($id);
+    }
 
     public function addAlojamientoFormulario() {
         $hotel = $_POST["hotel"];

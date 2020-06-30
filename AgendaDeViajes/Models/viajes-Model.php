@@ -36,5 +36,10 @@ class ViajesModel {
         return $sentencia->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function addViaje($nombre,$origen,$destino,$fecha_inicio,$fecha_fin){
+        $sentencia = $this->db->prepare('INSERT INTO VIAJE (nombre,ciudad_origen,ciudad_destino,fecha_inicio,fecha_fin) VALUES(?,?,?,?,?)');
+        $sentencia->execute(array($nombre,$origen,$destino,$fecha_inicio,$fecha_fin));
+    }
+
 }
 ?>

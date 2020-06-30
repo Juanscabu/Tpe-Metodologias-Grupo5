@@ -41,8 +41,12 @@ class ViajesView {
   public function mostrarError($msgError) {
     echo "<h1>ERROR!</h1>";
     echo "<h2>{$msgError}</h2>";
-}
+  }
 
+  public function mostrarFormViajeVuelo($id) {
+    $this->smarty->assign('titulo',"Agregar Viaje y Vuelo");
+    $this->smarty->display('templates/formAgregarViajeVuelo.tpl');
+  }
 }
 
 ?>
