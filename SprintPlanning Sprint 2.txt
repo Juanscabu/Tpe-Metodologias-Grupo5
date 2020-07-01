@@ -1,0 +1,7 @@
+Para el Sprint dos se realizó una reunión con todos los integrantes del equipo de desarrollo, en la cual se debatió sobre que US iban a ser tomadas
+del backlog para satisfacer los requerimientos asignados por el PO. Con esto resulto, se tomó cada una de las Stories y se desglosaron para saber
+más específicamente que es lo que se debía realizar, y así después realizar el Poker Planning, donde se logró una unificación de pensamientos sobre
+la complejidad de las tareas a realizar, para así asignarles los story points a las US.
+Luego de finalizado esto, cada miembro del equipo se auto-asignó las tareas que mejor se complementaban a sus habilidades.
+Así, se fijó la duración del sprint (aproximadamente dos semanas) y se le dio comienzo.
+ 
