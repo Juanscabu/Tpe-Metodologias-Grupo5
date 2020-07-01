@@ -73,10 +73,9 @@ class VuelosController {
         $cant_pasajeros = 1;
         $cant_valijas = 2;
         $peso_maximo = 25;
-        $this->viajesModel->addVueloFormulario($nro_vuelo, $compañia, $puerta, $asiento, $aeropuerto_origen, $aeropuerto_destino, $ciudad_origen,
-                                                $ciudad_destino, $pais_origen, $pais_destino, $fecha_salida, $fecha_llegada, $reserva,
-                                                $tiempo_escalas, $Agent_Id, $cant_pasajeros, $cant_valijas, $peso_maximo);
-        header("Location: " . HOME);
+        $id = 2;
+        $this->vuelosView->mostrarVuelos($nro_vuelo, $compañia, $puerta, $asiento, $aeropuerto_origen, $aeropuerto_destino, $ciudad_origen, $ciudad_destino, $pais_origen, $pais_destino, $fecha_salida, $fecha_llegada, $reserva, $tiempo_escalas, $Agent_Id, $cant_pasajeros, $cant_valijas, $peso_maximo, $id);
+
     }
 
 }

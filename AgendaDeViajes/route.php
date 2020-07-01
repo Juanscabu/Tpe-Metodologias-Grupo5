@@ -15,10 +15,10 @@
     $r->addRoute("mostrarAlojamientos/:ID", "GET", "ViajesController", "mostrarAlojamientos");
     $r->addRoute("mostrarMail", "GET", "ViajesController", "mostrarMail");
     $r->addRoute("cargarMail", "GET", "ViajesController", "cargarMail");
-    $r->addRoute("addVueloFormulario", "POST", "VuelosController", "addVueloFormulario");
+    $r->addRoute("addVueloFormulario", "GET", "VuelosController", "cargarMailVuelo");
     $r->addRoute("addVuelo/:ID", "GET", "VuelosController", "addVuelo");
     $r->addRoute("mostrarMailVuelo", "GET", "VuelosController", "mostrarMailVuelo");
-    $r->addRoute("cargarMail", "GET", "VuelosController", "cargarMailVuelo");
+    $r->addRoute("cargarMailVuelo", "GET", "VuelosController", "cargarMailVuelo");
 
   
   
