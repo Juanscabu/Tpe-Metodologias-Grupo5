@@ -1,0 +1,5 @@
+Aclaraciones sobre el diagrama. 
+Primero disculpas por la forma en que se distribuyeron las flechas, no supimos bien cómo distribuirlas para que queden más organizadas.
+En nuestros métodos utilizamos muchas variables por parámetro. 
+Para simplificar la lectura no pusimos el tipo de dato en esos casos (Aunque deberían estar para respetar UML)
+Omitimos los signos $ de los parámetros porque no estábamos seguros si eran necesarios en el diagrama ya que son parte de PHP. 
