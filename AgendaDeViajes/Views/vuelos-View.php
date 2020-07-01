@@ -14,6 +14,10 @@ public function mostrarAgregarVuelo() {
     $this->smarty->display('templates/formAgregarVuelo.tpl');
   }
 
+  public function mostrarMail() {
+    $this->smarty->assign('titulo');
+    $this->smarty->display('templates/agregarVuelo.tpl');
+  }
 
 }
 

@@ -50,11 +50,33 @@ class VuelosController {
     }
 
     public function mostrarMailVuelo () {
+        $this->vuelosView->mostrarMail();
 
     }
 
     public function cargarMailVuelo () {
-
+        $nro_vuelo = 6548;
+        $compañia = "Abrianca";
+        $puerta = 1;
+        $asiento = 11;
+        $aeropuerto_origen = "BUE";
+        $aeropuerto_destino = "AUZ";
+        $ciudad_origen = "Banderville City";
+        $ciudad_destino = "Ullathorpe City";
+        $pais_origen = "Banderville";
+        $pais_destino = "Ullathorpe City";
+        $fecha_salida = "2020-04-26";
+        $fecha_llegada = "2020-04-26";
+        $reserva = 1;
+        $tiempo_escalas = 2;
+        $Agent_Id = 456;
+        $cant_pasajeros = 1;
+        $cant_valijas = 2;
+        $peso_maximo = 25;
+        $this->viajesModel->addVueloFormulario($nro_vuelo, $compañia, $puerta, $asiento, $aeropuerto_origen, $aeropuerto_destino, $ciudad_origen,
+                                                $ciudad_destino, $pais_origen, $pais_destino, $fecha_salida, $fecha_llegada, $reserva,
+                                                $tiempo_escalas, $Agent_Id, $cant_pasajeros, $cant_valijas, $peso_maximo);
+        header("Location: " . HOME);
     }
 
 }
